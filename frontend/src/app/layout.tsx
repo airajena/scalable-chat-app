@@ -9,7 +9,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "SpiderChat",
+  title: "FalconChat",
   description: "Scalable Chat App",
 };
 
