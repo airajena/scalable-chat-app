@@ -1,6 +1,7 @@
 import FeatureSection from "@/components/base/FeatureSection";
 import HeroSection from "@/components/base/HeroSection";
 import Navbar from "@/components/base/Navbar";
+import UserReviews from "@/components/base/UserReviews";
 
 export default async function LandingPage() {
   return (
@@ -8,6 +9,7 @@ export default async function LandingPage() {
       <Navbar/>
       <HeroSection/>
       <FeatureSection/>
+      <UserReviews/>
     </div>
   );
 }
