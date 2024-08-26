@@ -12,10 +12,14 @@ import { signIn } from "next-auth/react";
 import { DialogDescription } from "@radix-ui/react-dialog";
 
 const handleGoogleLogin = async () => {
-  signIn("google", {
-    redirect: true,
-    callbackUrl: "/",
-  });
+  try {
+    await signIn("google", {
+      redirect: true,
+      callbackUrl: "/dashboard",
+    });
+  } catch (error) {
+    console.error("Google sign-in failed:", error);
+  }
 };
 
 export default function LoginModal() {
