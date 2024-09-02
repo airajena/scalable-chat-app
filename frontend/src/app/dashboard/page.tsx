@@ -22,7 +22,6 @@ export default async function dashboard() {
           <CreateChat user={session?.user!} />
         </div>
 
-        {/* If Groups */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {groups.length > 0 &&
             groups.map((item, index) => (
