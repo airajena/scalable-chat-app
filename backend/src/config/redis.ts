@@ -1,6 +1,6 @@
 import { Redis } from "ioredis";
 const redis = new Redis({
-  host: "https://scalable-chat-app-mzvn.onrender.com",
+  host: "scalable-chat-app-mzvn.onrender.com",
   port: 6379,
 });
 
